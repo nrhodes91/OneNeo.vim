@@ -36,17 +36,20 @@ function! s:h(group, style, ...)
         endif
     endif
 
-    let l:ctermfg = (has_key(a:highlight, 'fg') ? a:highlight.fg.cterm : 'NONE')
-    let l:ctermbg = (has_key(a:highlight, 'bg') ? a:highlight.bg.cterm : 'NONE')
+    if has_key(a:highlight, 'link')
+        execute 'highlight link' a:group a:highlight.link
+    else
+        execute 'highlight link' a:group 'NONE'
 
-    execute 'highlight' a:group
-                \ 'guifg='   (has_key(a:highlight, 'fg')    ? a:highlight.fg.gui   : 'NONE')
-                \ 'guibg='   (has_key(a:highlight, 'bg')    ? a:highlight.bg.gui   : 'NONE')
-                \ 'guisp='   (has_key(a:highlight, 'sp')    ? a:highlight.sp.gui   : 'NONE')
-                \ 'gui='     (has_key(a:highlight, 'gui')   ? a:highlight.gui      : 'NONE')
-                \ 'ctermfg=' . l:ctermfg
-                \ 'ctermbg=' . l:ctermbg
-                \ 'cterm='   (has_key(a:highlight, 'cterm') ? a:highlight.cterm    : 'NONE')
+        execute 'highlight' a:group
+                    \ 'guifg='   . (has_key(a:highlight, 'fg')    ? a:highlight.fg.gui   : 'NONE')
+                    \ 'guibg='   . (has_key(a:highlight, 'bg')    ? a:highlight.bg.gui   : 'NONE')
+                    \ 'guisp='   . (has_key(a:highlight, 'sp')    ? a:highlight.sp.gui   : 'NONE')
+                    \ 'gui='     . (has_key(a:highlight, 'gui')   ? a:highlight.gui      : 'NONE')
+                    \ 'ctermfg=' . (has_key(a:highlight, 'fg')    ? a:highlight.fg.cterm : 'NONE')
+                    \ 'ctermbg=' . (has_key(a:highlight, 'bg')    ? a:highlight.bg.cterm : 'NONE')
+                    \ 'cterm='   . (has_key(a:highlight, 'cterm') ? a:highlight.cterm    : 'NONE')
+    endif
 endfunction
 
 let s:theme = {}
@@ -239,10 +242,9 @@ call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
 call s:h('diffAdded', { 'fg': s:green })
 call s:h('diffRemoved', { 'fg': s:red })
 call s:h('diffSubname', { 'fg': s:blue })
-call s:h('diffLine', { })
+call s:h('diffLine', { 'fg': s:blue })
 call s:h('diffFile', { })
 call s:h('diffNewFile', { })
-
 call s:h('gitcommitBranch', { 'fg': s:purple, 'gui': 'bold' })
 call s:h('gitcommitSelectedFile', { 'fg': s:cyan, 'gui': 'bold' })
 call s:h('gitcommitSelectedType', { 'fg': s:green })
@@ -251,7 +253,12 @@ call s:h('gitcommitSelectedFile', { 'fg': s:green })
 call s:h('gitcommitDiscardedFile', { 'fg': s:red })
 call s:h('gitcommitUnmergedFile', { 'fg': s:yellow })
 call s:h('gitcommitUntrackedFile', { 'fg': s:cyan })
-call s:h('gitcommitHeader', {})
+call s:h('gitcommitHeader', { })
+
+" GitGutter
+call s:h('GitGutterAdd', { 'fg': s:green })
+call s:h('GitGutterChange', { 'fg': s:yellow })
+call s:h('GitGutterDelete', { 'fg': s:red })
 
 let g:terminal_ansi_colors = [
             \ s:black.gui, s:red.gui, s:green.gui, s:yellow.gui,
