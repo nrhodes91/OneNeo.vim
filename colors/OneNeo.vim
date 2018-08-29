@@ -225,17 +225,26 @@ call s:h('WarningMsg', { 'fg': s:yellow })
 call s:h('WildMenu', { 'fg': s:black, 'bg': s:blue })
 
 " Shell
-"call s:h("shTestOpr", { "fg": s:cyan })
-"call s:h("shDerefVarArray", { "fg": s:cyan, "gui": "none" })
-"call s:h("shFunctionKey", { "gui": "bold" })
-hi link shFunctionKey NONE
+"call s:h("shTestOpr", { 'fg': s:cyan })
+"call s:h("shDerefVarArray", { 'fg': s:cyan, 'gui': 'none' })
+"call s:h("shFunctionKey", { 'gui': 'bold' })
 call s:h('shFunctionKey', { 'fg': s:white, 'gui': 'italic' })
 call s:h('shSet', { 'fg': s:purple, 'gui': 'italic' })
 
 " Python
-hi link pythonStatement NONE
 call s:h('pythonStatement', { 'gui': 'italic' })
 call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
+
+" Git
+call s:h('diffAdded', { 'fg': s:green })
+call s:h('diffRemoved', { 'fg': s:red })
+call s:h('diffSubname', { 'fg': s:blue })
+call s:h('diffLine', { })
+call s:h('diffFile', { 'fg': s:green })
+call s:h('diffNewFile', { 'fg': s:red })
+
+call s:h('gitcommitBranch', { 'fg': s:purple, 'gui': 'bold' })
+call s:h('gitcommitSelectedFile', { 'gui': 'bold' })
 
 let g:terminal_ansi_colors = [
             \ s:black.gui, s:red.gui, s:green.gui, s:yellow.gui,
