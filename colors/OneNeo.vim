@@ -240,11 +240,18 @@ call s:h('diffAdded', { 'fg': s:green })
 call s:h('diffRemoved', { 'fg': s:red })
 call s:h('diffSubname', { 'fg': s:blue })
 call s:h('diffLine', { })
-call s:h('diffFile', { 'fg': s:green })
-call s:h('diffNewFile', { 'fg': s:red })
+call s:h('diffFile', { })
+call s:h('diffNewFile', { })
 
 call s:h('gitcommitBranch', { 'fg': s:purple, 'gui': 'bold' })
-call s:h('gitcommitSelectedFile', { 'gui': 'bold' })
+call s:h('gitcommitSelectedFile', { 'fg': s:cyan, 'gui': 'bold' })
+call s:h('gitcommitSelectedType', { 'fg': s:green })
+call s:h('gitcommitDiscardedType', { 'fg': s:red })
+call s:h('gitcommitSelectedFile', { 'fg': s:green })
+call s:h('gitcommitDiscardedFile', { 'fg': s:red })
+call s:h('gitcommitUnmergedFile', { 'fg': s:yellow })
+call s:h('gitcommitUntrackedFile', { 'fg': s:cyan })
+call s:h('gitcommitHeader', {})
 
 let g:terminal_ansi_colors = [
             \ s:black.gui, s:red.gui, s:green.gui, s:yellow.gui,
