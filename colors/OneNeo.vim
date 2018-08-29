@@ -122,9 +122,7 @@ let s:menu_grey = s:colors.menu_grey
 let s:special_grey = s:colors.special_grey
 let s:vertsplit = s:colors.vertsplit
 
-
-" Syntax Groups (descriptions and ordering from `:h w18`)
-
+" :h w18
 call s:h('Comment', { 'fg': s:comment_grey, 'gui': 'italic', 'cterm': 'italic' })
 call s:h('Constant', { 'fg': s:cyan })
 call s:h('String', { 'fg': s:green })
@@ -161,9 +159,7 @@ call s:h('Ignore', {})
 call s:h('Error', { 'fg': s:red })
 call s:h('Todo', { 'fg': s:purple })
 
-"
-
-" Highlighting Groups (descriptions and ordering from `:h highlight-groups`)
+" :h highlight-groups
 call s:h('ColorColumn', { 'bg': s:cursor_grey })
 call s:h('Conceal', {})
 call s:h('Cursor', { 'fg': s:black, 'bg': s:blue })
@@ -173,7 +169,7 @@ call s:h('CursorColumn', { 'bg': s:cursor_grey })
 if &diff
     call s:h('CursorLine', { 'gui': 'underline' })
 else
-    call s:h('CursorLine', {  })
+    call s:h('CursorLine', { 'bg': s:cursor_grey })
 endif
 call s:h('Directory', { 'fg': s:blue })
 call s:h('DiffAdd', { 'bg': s:green, 'fg': s:black })
