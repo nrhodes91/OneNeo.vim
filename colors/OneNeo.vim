@@ -173,7 +173,7 @@ call s:h('CursorColumn', { 'bg': s:cursor_grey })
 if &diff
     call s:h('CursorLine', { 'gui': 'underline' })
 else
-    call s:h('CursorLine', { 'bg': s:cursor_grey })
+    call s:h('CursorLine', {  })
 endif
 call s:h('Directory', { 'fg': s:blue })
 call s:h('DiffAdd', { 'bg': s:green, 'fg': s:black })
@@ -187,7 +187,7 @@ call s:h('FoldColumn', {})
 call s:h('SignColumn', {})
 call s:h('IncSearch', { 'fg': s:yellow, 'bg': s:comment_grey })
 call s:h('LineNr', { 'fg': s:gutter_fg_grey })
-call s:h('CursorLineNr', {})
+call s:h('CursorLineNr', { 'gui': 'bold' })
 call s:h('MatchParen', { 'fg': s:blue, 'gui': 'underline' })
 call s:h('ModeMsg', {})
 call s:h('MoreMsg', {})
