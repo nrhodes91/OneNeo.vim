@@ -237,10 +237,11 @@ call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
 " Git
 call s:h('diffAdded', { 'fg': s:green })
 call s:h('diffRemoved', { 'fg': s:red })
-call s:h('diffSubname', { 'fg': s:blue })
-call s:h('diffLine', { 'fg': s:blue })
-call s:h('diffFile', { })
-call s:h('diffNewFile', { })
+call s:h('diffSubname', { })
+call s:h('diffLine', { 'fg': s:cyan })
+call s:h('diffFile', { 'gui': 'bold' })
+call s:h('diffNewFile', { 'gui': 'bold' })
+call s:h('diffIndexLine', { 'gui': 'bold' })
 call s:h('gitcommitBranch', { 'fg': s:purple, 'gui': 'bold' })
 call s:h('gitcommitSelectedFile', { 'fg': s:cyan, 'gui': 'bold' })
 call s:h('gitcommitSelectedType', { 'fg': s:green })
@@ -250,6 +251,7 @@ call s:h('gitcommitDiscardedFile', { 'fg': s:red })
 call s:h('gitcommitUnmergedFile', { 'fg': s:yellow })
 call s:h('gitcommitUntrackedFile', { 'fg': s:cyan })
 call s:h('gitcommitHeader', { })
+
 
 " GitGutter
 call s:h('GitGutterAdd', { 'fg': s:green })
