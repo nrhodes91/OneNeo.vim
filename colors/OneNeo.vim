@@ -85,13 +85,13 @@ let s:theme['light'] = {
             \ 'white': { 'gui': '#000000', 'cterm': '145', 'cterm16': '7' },
             \ 'black': { 'gui': '#E5E5E5', 'cterm': '235', 'cterm16': '0' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
-            \ 'comment_grey': { 'gui': '#7c8598', 'cterm': '59', 'cterm16': '15' },
-            \ 'gutter_fg_grey': { 'gui': '#7c8598', 'cterm': '238', 'cterm16': '15' },
-            \ 'cursor_grey': { 'gui': '#d4d7dd', 'cterm': '236', 'cterm16': '8' },
-            \ 'visual_grey': { 'gui': '#7c8598', 'cterm': '237', 'cterm16': '15' },
-            \ 'menu_grey': { 'gui': '#7c8598', 'cterm': '237', 'cterm16': '8' },
-            \ 'special_grey': { 'gui': '#7c8598', 'cterm': '238', 'cterm16': '15' },
-            \ 'vertsplit': { 'gui': '#7c8598', 'cterm': '59', 'cterm16': '15' },
+            \ 'comment_grey': { 'gui': '#999999', 'cterm': '59', 'cterm16': '15' },
+            \ 'gutter_fg_grey': { 'gui': '#999999', 'cterm': '238', 'cterm16': '15' },
+            \ 'cursor_grey': { 'gui': '#cccccc', 'cterm': '236', 'cterm16': '8' },
+            \ 'visual_grey': { 'gui': '#cccccc', 'cterm': '237', 'cterm16': '15' },
+            \ 'menu_grey': { 'gui': '#999999', 'cterm': '237', 'cterm16': '8' },
+            \ 'special_grey': { 'gui': '#999999', 'cterm': '238', 'cterm16': '15' },
+            \ 'vertsplit': { 'gui': '#999999', 'cterm': '59', 'cterm16': '15' },
             \}
 
 let s:selected_variant = 'dark'
@@ -221,7 +221,7 @@ call s:h('Title', { 'fg': s:green })
 call s:h('Visual', { 'fg': s:visual_black, 'bg': s:visual_grey })
 call s:h('VisualNOS', { 'bg': s:visual_grey })
 call s:h('WarningMsg', { 'fg': s:yellow })
-call s:h('WildMenu', { 'fg': s:black, 'bg': s:blue })
+call s:h('WildMenu', { 'fg': s:black, 'bg': s:cyan })
 
 " Shell
 "call s:h("shTestOpr", { 'fg': s:cyan })
