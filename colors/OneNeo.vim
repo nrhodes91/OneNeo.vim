@@ -56,7 +56,7 @@ let s:theme = {}
 let s:theme['dark'] = {
             \ 'red': { 'gui': '#E06C75', 'cterm': '204', 'cterm16': '1' },
             \ 'dark_red': { 'gui': '#BE5046', 'cterm': '196', 'cterm16': '9' },
-            \ 'green': { 'gui': '#4da30f', 'cterm': '114', 'cterm16': '2' },
+            \ 'green': { 'gui': '#98C379', 'cterm': '114', 'cterm16': '2' },
             \ 'yellow':  { 'gui': '#E5C07B', 'cterm': '180', 'cterm16': '3' },
             \ 'dark_yellow': { 'gui': '#D19A66', 'cterm': '173', 'cterm16': '11' },
             \ 'blue': { 'gui': '#61AFEF', 'cterm': '39', 'cterm16': '4' },
