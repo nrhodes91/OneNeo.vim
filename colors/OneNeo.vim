@@ -82,7 +82,7 @@ let s:theme['light'] = {
             \ 'blue': { 'gui': '#0e49c8', 'cterm': '39', 'cterm16': '4' },
             \ 'purple': { 'gui': '#871785', 'cterm': '170', 'cterm16': '5' },
             \ 'cyan': { 'gui': '#016793', 'cterm': '38', 'cterm16': '6' },
-            \ 'white': { 'gui': '#000000', 'cterm': '145', 'cterm16': '7' },
+            \ 'white': { 'gui': '#1A1A1A', 'cterm': '145', 'cterm16': '7' },
             \ 'black': { 'gui': '#E5E5E5', 'cterm': '235', 'cterm16': '0' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
             \ 'comment_grey': { 'gui': '#999999', 'cterm': '59', 'cterm16': '15' },
