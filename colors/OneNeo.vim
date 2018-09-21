@@ -1,11 +1,12 @@
 " Vim Color File
+" =============================================================================
 " Name:       one_neo.vim
-" Maintainer: https://github.com/nrhodes91/one_neo.vim/
+" Maintainer: https://github.com/nrhodes91/OneNeo.vim/
 " License:    Unlicense
 " Based On:   https://github.com/joshdick/onedark.vim/
+" =============================================================================
 
 " Initialization
-
 highlight clear
 
 if exists('syntax_on')
