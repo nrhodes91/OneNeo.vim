@@ -234,6 +234,8 @@ call s:h('shSet', { 'fg': s:purple, 'gui': 'italic' })
 " Python
 "call s:h('pythonStatement', { 'fg': s:blue, 'gui': 'bold' })
 "call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
+call s:h('pythonException', { 'fg': s:blue, 'gui': 'bold' })
+call s:h('pythonExClass', { 'fg': s:red, 'gui': 'bold' })
 
 " Git
 call s:h('diffAdded', { 'fg': s:green })
