@@ -232,8 +232,8 @@ call s:h('shFunctionKey', { 'fg': s:white, 'gui': 'italic' })
 call s:h('shSet', { 'fg': s:purple, 'gui': 'italic' })
 
 " Python
-call s:h('pythonStatement', { 'fg': s:blue, 'gui': 'bold' })
-call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
+"call s:h('pythonStatement', { 'fg': s:blue, 'gui': 'bold' })
+"call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
 
 " Git
 call s:h('diffAdded', { 'fg': s:green })
