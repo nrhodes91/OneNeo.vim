@@ -232,7 +232,7 @@ call s:h('shFunctionKey', { 'fg': s:white, 'gui': 'italic' })
 call s:h('shSet', { 'fg': s:purple, 'gui': 'italic' })
 
 " Python
-call s:h('pythonStatement', { 'gui': 'italic' })
+call s:h('pythonStatement', { 'fg': 'blue', 'gui': 'bold' })
 call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
 
 " Git
