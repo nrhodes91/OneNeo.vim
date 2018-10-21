@@ -236,6 +236,9 @@ call s:h('shSet', { 'fg': s:purple, 'gui': 'italic' })
 "call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
 call s:h('pythonException', { 'fg': s:blue, 'gui': 'bold' })
 call s:h('pythonExClass', { 'fg': s:red, 'gui': 'bold' })
+call s:h('pythonImport', { 'fg': s:blue, 'gui': 'bold' })
+hi link pythonRun Comment
+hi link pythonBytesEscape String
 
 " Git
 call s:h('diffAdded', { 'fg': s:green })
