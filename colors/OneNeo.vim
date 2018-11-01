@@ -212,7 +212,7 @@ call s:h('SpellBad', { 'fg': s:red, 'gui': 'underline', 'cterm': 'underline' })
 call s:h('SpellCap', { 'fg': s:dark_yellow })
 call s:h('SpellLocal', { 'fg': s:dark_yellow })
 call s:h('SpellRare', { 'fg': s:dark_yellow })
-call s:h('StatusLine', { 'fg': s:white, 'bg': s:cursor_grey, 'gui': 'bold' })
+call s:h('StatusLine', { 'fg': s:white, 'bg': s:cursor_grey })
 call s:h('StatusLineNC', { 'fg': s:comment_grey })
 call s:h('TabLine', { 'fg': s:comment_grey })
 call s:h('TabLineFill', {})
@@ -232,8 +232,13 @@ call s:h('shFunctionKey', { 'fg': s:white, 'gui': 'italic' })
 call s:h('shSet', { 'fg': s:purple, 'gui': 'italic' })
 
 " Python
-call s:h('pythonStatement', { 'gui': 'italic' })
-call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
+"call s:h('pythonStatement', { 'fg': s:blue, 'gui': 'bold' })
+"call s:h('pythonStrFormatting', { 'fg': s:white, 'gui': 'bold' })
+call s:h('pythonException', { 'fg': s:blue, 'gui': 'bold' })
+call s:h('pythonExClass', { 'fg': s:red, 'gui': 'bold' })
+call s:h('pythonImport', { 'fg': s:blue, 'gui': 'bold' })
+hi link pythonRun Comment
+hi link pythonBytesEscape String
 
 " Git
 call s:h('diffAdded', { 'fg': s:green })
