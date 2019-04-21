@@ -63,7 +63,7 @@ let s:theme['dark'] = {
             \ 'blue': { 'gui': '#61AFEF', 'cterm': '39', 'cterm16': '4' },
             \ 'purple': { 'gui': '#C678DD', 'cterm': '170', 'cterm16': '5' },
             \ 'cyan': { 'gui': '#56B6C2', 'cterm': '38', 'cterm16': '6' },
-            \ 'white': { 'gui': '#ABB2BF', 'cterm': '145', 'cterm16': '7' },
+            \ 'white': { 'gui': '#BEBEBE', 'cterm': '145', 'cterm16': '7' },
             \ 'black': { 'gui': '#282C34', 'cterm': '235', 'cterm16': '0' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
             \ 'comment_grey': { 'gui': '#5C6370', 'cterm': '59', 'cterm16': '15' },
@@ -212,7 +212,7 @@ call s:h('SpellBad', { 'fg': s:red, 'gui': 'underline', 'cterm': 'underline' })
 call s:h('SpellCap', { 'fg': s:dark_yellow })
 call s:h('SpellLocal', { 'fg': s:dark_yellow })
 call s:h('SpellRare', { 'fg': s:dark_yellow })
-call s:h('StatusLine', { 'fg': s:white, 'bg': s:cursor_grey })
+call s:h('StatusLine', { 'fg': s:white, 'gui': 'bold' })
 call s:h('StatusLineNC', { 'fg': s:comment_grey })
 call s:h('TabLine', { 'fg': s:comment_grey })
 call s:h('TabLineFill', {})
