@@ -63,7 +63,7 @@ let s:theme['dark'] = {
             \ 'blue': { 'gui': '#61AFEF', 'cterm': '39', 'cterm16': '4' },
             \ 'purple': { 'gui': '#C678DD', 'cterm': '170', 'cterm16': '5' },
             \ 'cyan': { 'gui': '#56B6C2', 'cterm': '38', 'cterm16': '6' },
-            \ 'white': { 'gui': '#BEBEBE', 'cterm': '145', 'cterm16': '7' },
+            \ 'white': { 'gui': '#BEB5B5', 'cterm': '145', 'cterm16': '7' },
             \ 'black': { 'gui': '#282C34', 'cterm': '235', 'cterm16': '0' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
             \ 'comment_grey': { 'gui': '#5C6370', 'cterm': '59', 'cterm16': '15' },
