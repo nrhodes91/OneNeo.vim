@@ -242,3 +242,5 @@ call s:h('gitcommitHeader', { })
 call s:h('GitGutterAdd', { 'fg': s:green })
 call s:h('GitGutterChange', { 'fg': s:yellow })
 call s:h('GitGutterDelete', { 'fg': s:red })
+
+hi link vimCommentTitle Constant
