@@ -63,7 +63,8 @@ let s:theme['dark'] = {
             \ 'white': { 'gui': '#BEB5B5', 'cterm': '145', 'cterm16': '7' },
             \ 'black': { 'gui': '#282C34', 'cterm': '235', 'cterm16': '0' },
             \ 'grey': { 'gui': '#5C6370', 'cterm': '59', 'cterm16': '15' },
-            \ 'cursor_grey': { 'gui': '#333842', 'cterm': '59', 'cterm16': '15' },
+            \ 'visual_grey': { 'gui': '#333842', 'cterm': '59', 'cterm16': '15' },
+            \ 'cursorline': { 'gui': '#2c303a', 'cterm': '59', 'cterm16': '15' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
             \}
 let s:theme['light'] = {
@@ -77,7 +78,8 @@ let s:theme['light'] = {
             \ 'white': { 'gui': '#1A1A1A', 'cterm': '145', 'cterm16': '7' },
             \ 'black': { 'gui': '#E5E5E5', 'cterm': '235', 'cterm16': '0' },
             \ 'grey': { 'gui': '#999999', 'cterm': '59', 'cterm16': '15' },
-            \ 'cursor_grey': { 'gui': '#cccccc', 'cterm': '59', 'cterm16': '15' },
+            \ 'visual_grey': { 'gui': '#cccccc', 'cterm': '59', 'cterm16': '15' },
+            \ 'cursorline': { 'gui': '#cccccc', 'cterm': '59', 'cterm16': '15' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
             \}
 
@@ -101,7 +103,8 @@ let s:white = s:colors.white
 let s:black = s:colors.black
 let s:visual_black = s:colors.visual_black
 let s:grey = s:colors.grey
-let s:cursor_grey = s:colors.cursor_grey
+let s:visual_grey = s:colors.visual_grey
+let s:cursorline = s:colors.cursorline
 
 " :h w18
 call s:h('Normal', { 'fg': s:white, 'bg': s:black })
@@ -155,12 +158,12 @@ call s:h('ColorColumn', { 'bg': s:grey })
 call s:h('Conceal', {})
 call s:h('Cursor', { 'fg': s:black, 'bg': s:blue })
 call s:h('CursorIM', {})
-call s:h('CursorColumn', { 'bg': s:grey })
+call s:h('CursorColumn', { 'bg': s:cursorline })
 " no cursorline in diff mode
 if &diff
     call s:h('CursorLine', { 'gui': 'underline' })
 else
-    call s:h('CursorLine', { 'bg': s:cursor_grey })
+    call s:h('CursorLine', { 'bg': s:cursorline })
 endif
 call s:h('CursorLineNr', { 'gui': 'bold' })
 call s:h('Directory', { 'fg': s:blue })
@@ -198,8 +201,8 @@ call s:h('TabLineFill', {})
 call s:h('TabLineSel', { 'fg': s:white })
 call s:h('Terminal', { 'fg': s:white, 'bg': s:black })
 call s:h('Title', { 'fg': s:green })
-call s:h('Visual', { 'fg': s:visual_black, 'bg': s:cursor_grey })
-call s:h('VisualNOS', { 'bg': s:cursor_grey })
+call s:h('Visual', { 'fg': s:visual_black, 'bg': s:visual_grey })
+call s:h('VisualNOS', { 'bg': s:visual_grey })
 call s:h('WarningMsg', { 'fg': s:yellow })
 call s:h('WildMenu', { 'fg': s:black, 'bg': s:cyan })
 
