@@ -64,7 +64,7 @@ let s:theme['dark'] = {
             \ 'black': { 'gui': '#282C34', 'cterm': '235', 'cterm16': '0' },
             \ 'grey': { 'gui': '#5C6370', 'cterm': '59', 'cterm16': '15' },
             \ 'visual_grey': { 'gui': '#333842', 'cterm': '59', 'cterm16': '15' },
-            \ 'cursorline': { 'gui': '#2c303a', 'cterm': '59', 'cterm16': '15' },
+            \ 'cursorline': { 'gui': '#2e333d', 'cterm': '59', 'cterm16': '15' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
             \}
 let s:theme['light'] = {
@@ -79,7 +79,7 @@ let s:theme['light'] = {
             \ 'black': { 'gui': '#E5E5E5', 'cterm': '235', 'cterm16': '0' },
             \ 'grey': { 'gui': '#999999', 'cterm': '59', 'cterm16': '15' },
             \ 'visual_grey': { 'gui': '#cccccc', 'cterm': '59', 'cterm16': '15' },
-            \ 'cursorline': { 'gui': '#cccccc', 'cterm': '59', 'cterm16': '15' },
+            \ 'cursorline': { 'gui': '#d9d9d9', 'cterm': '59', 'cterm16': '15' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
             \}
 
