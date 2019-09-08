@@ -105,7 +105,6 @@ let s:cursor_grey = s:colors.cursor_grey
 
 " :h w18
 call s:h('Normal', { 'fg': s:white, 'bg': s:black })
-
 " updating Normal will also update the background
 " variable depending on the color used. This needs
 " to be overridden immediately afterwards
@@ -163,6 +162,7 @@ if &diff
 else
     call s:h('CursorLine', { 'bg': s:cursor_grey })
 endif
+call s:h('CursorLineNr', { 'gui': 'bold' })
 call s:h('Directory', { 'fg': s:blue })
 call s:h('DiffAdd', { 'bg': s:green, 'fg': s:black })
 call s:h('DiffChange', { 'fg': s:yellow, 'gui': 'underline', 'cterm': 'underline' })
@@ -175,7 +175,6 @@ call s:h('FoldColumn', {})
 call s:h('SignColumn', {})
 call s:h('IncSearch', { 'fg': s:yellow, 'bg': s:grey })
 call s:h('LineNr', { 'fg': s:grey })
-call s:h('CursorLineNr', { 'gui': 'bold' })
 call s:h('MatchParen', { 'fg': s:blue, 'gui': 'underline' })
 call s:h('ModeMsg', {})
 call s:h('MoreMsg', {})
@@ -246,6 +245,7 @@ call s:h('GitGutterDelete', { 'fg': s:red })
 
 " Vim
 hi link vimCommentTitle Constant
+hi link vimUserFunc NONE
 
 " Hosts
 hi link hostsFirstWord Constant
