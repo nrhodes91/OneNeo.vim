@@ -24,30 +24,30 @@ if !exists('g:one_neo_terminal_italics')
 endif
 
 function! s:h(group, style, ...)
-    let a:highlight = a:style
+    let l:highlight = a:style
 
     if g:one_neo_terminal_italics == 0
-        if has_key(a:highlight, 'cterm') && a:highlight['cterm'] ==# 'italic'
-            unlet a:highlight.cterm
+        if has_key(l:highlight, 'cterm') && l:highlight['cterm'] ==# 'italic'
+            unlet l:highlight.cterm
         endif
-        if has_key(a:highlight, 'gui') && a:highlight['gui'] ==# 'italic'
-            unlet a:highlight.gui
+        if has_key(l:highlight, 'gui') && l:highlight['gui'] ==# 'italic'
+            unlet l:highlight.gui
         endif
     endif
 
-    if has_key(a:highlight, 'link')
-        execute 'highlight link' a:group a:highlight.link
+    if has_key(l:highlight, 'link')
+        execute 'highlight link' a:group l:highlight.link
     else
         execute 'highlight link' a:group 'NONE'
 
         execute 'highlight' a:group
-                    \ 'guifg='   . (has_key(a:highlight, 'fg')    ? a:highlight.fg.gui   : 'NONE')
-                    \ 'guibg='   . (has_key(a:highlight, 'bg')    ? a:highlight.bg.gui   : 'NONE')
-                    \ 'guisp='   . (has_key(a:highlight, 'sp')    ? a:highlight.sp.gui   : 'NONE')
-                    \ 'gui='     . (has_key(a:highlight, 'gui')   ? a:highlight.gui      : 'NONE')
-                    \ 'ctermfg=' . (has_key(a:highlight, 'fg')    ? a:highlight.fg.cterm : 'NONE')
-                    \ 'ctermbg=' . (has_key(a:highlight, 'bg')    ? a:highlight.bg.cterm : 'NONE')
-                    \ 'cterm='   . (has_key(a:highlight, 'cterm') ? a:highlight.cterm    : 'NONE')
+                    \ 'guifg='   . (has_key(l:highlight, 'fg')    ? l:highlight.fg.gui   : 'NONE')
+                    \ 'guibg='   . (has_key(l:highlight, 'bg')    ? l:highlight.bg.gui   : 'NONE')
+                    \ 'guisp='   . (has_key(l:highlight, 'sp')    ? l:highlight.sp.gui   : 'NONE')
+                    \ 'gui='     . (has_key(l:highlight, 'gui')   ? l:highlight.gui      : 'NONE')
+                    \ 'ctermfg=' . (has_key(l:highlight, 'fg')    ? l:highlight.fg.cterm : 'NONE')
+                    \ 'ctermbg=' . (has_key(l:highlight, 'bg')    ? l:highlight.bg.cterm : 'NONE')
+                    \ 'cterm='   . (has_key(l:highlight, 'cterm') ? l:highlight.cterm    : 'NONE')
     endif
 endfunction
 
