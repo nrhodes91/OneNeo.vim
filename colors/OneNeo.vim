@@ -210,8 +210,8 @@ call s:h('WildMenu', { 'fg': s:black, 'bg': s:cyan })
 "call s:h("shTestOpr", { 'fg': s:cyan })
 "call s:h("shDerefVarArray", { 'fg': s:cyan, 'gui': 'none' })
 "call s:h("shFunctionKey", { 'gui': 'bold' })
-call s:h('shFunctionKey', { 'fg': s:white, 'gui': 'italic' })
-call s:h('shSet', { 'fg': s:purple, 'gui': 'italic' })
+call s:h('shFunctionKey', { 'fg': s:white })
+call s:h('shSet', { 'fg': s:purple })
 
 " Python
 "call s:h('pythonStatement', { 'fg': s:blue, 'gui': 'bold' })
