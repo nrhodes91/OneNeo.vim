@@ -63,6 +63,7 @@ let s:theme['dark'] = {
             \ 'white': { 'gui': '#9E9E9E', 'cterm': '145', 'cterm16': '7' },
             \ 'black': { 'gui': '#282C34', 'cterm': '235', 'cterm16': '0' },
             \ 'grey': { 'gui': '#5C6370', 'cterm': '59', 'cterm16': '15' },
+            \ 'dark_grey': { 'gui': '#1b1d23', 'cterm': '239', 'cterm16': '15' },
             \ 'visual_grey': { 'gui': '#353b45', 'cterm': '59', 'cterm16': '15' },
             \ 'cursorline': { 'gui': '#2e333d', 'cterm': '59', 'cterm16': '15' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
@@ -78,6 +79,7 @@ let s:theme['light'] = {
             \ 'white': { 'gui': '#1A1A1A', 'cterm': '145', 'cterm16': '7' },
             \ 'black': { 'gui': '#E5E5E5', 'cterm': '235', 'cterm16': '0' },
             \ 'grey': { 'gui': '#999999', 'cterm': '59', 'cterm16': '15' },
+            \ 'dark_grey': { 'gui': '#1b1d23', 'cterm': '239', 'cterm16': '15' },
             \ 'visual_grey': { 'gui': '#cccccc', 'cterm': '59', 'cterm16': '15' },
             \ 'cursorline': { 'gui': '#d9d9d9', 'cterm': '59', 'cterm16': '15' },
             \ 'visual_black': { 'gui': 'NONE', 'cterm': 'NONE', 'cterm16': '0' },
@@ -103,6 +105,7 @@ let s:white = s:colors.white
 let s:black = s:colors.black
 let s:visual_black = s:colors.visual_black
 let s:grey = s:colors.grey
+let s:dark_grey = s:colors.dark_grey
 let s:visual_grey = s:colors.visual_grey
 let s:cursorline = s:colors.cursorline
 
@@ -182,7 +185,7 @@ call s:h('MatchParen', { 'fg': s:blue, 'gui': 'underline' })
 call s:h('ModeMsg', {})
 call s:h('MoreMsg', {})
 call s:h('NonText', { 'fg': s:grey })
-call s:h('Pmenu', { 'bg': s:grey })
+call s:h('Pmenu', { 'bg': s:dark_grey })
 call s:h('PmenuSel', { 'fg': s:black, 'bg': s:blue })
 call s:h('PmenuSbar', { 'bg': s:grey })
 call s:h('PmenuThumb', { 'bg': s:white })
