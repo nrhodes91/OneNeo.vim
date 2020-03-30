@@ -62,7 +62,7 @@ let s:theme['dark'] = {
             \ 'cyan': { 'gui': '#56B6C2', 'cterm': '38', 'cterm16': '6' },
             \ 'white': { 'gui': '#adb4c2', 'cterm': '145', 'cterm16': '7' },
             \ 'black': { 'gui': '#282C34', 'cterm': '235', 'cterm16': '0' },
-            \ 'grey': { 'gui': '#5C6370', 'cterm': '59', 'cterm16': '15' },
+            \ 'grey': { 'gui': '#737c8c', 'cterm': '59', 'cterm16': '15' },
             \ 'dark_grey': { 'gui': '#1b1d23', 'cterm': '239', 'cterm16': '15' },
             \ 'visual_grey': { 'gui': '#353b45', 'cterm': '59', 'cterm16': '15' },
             \ 'cursorline': { 'gui': '#2e333d', 'cterm': '59', 'cterm16': '15' },
